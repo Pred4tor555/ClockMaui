@@ -1,0 +1,2107 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ClockMaui.MainPage"
+             BackgroundColor="LightSteelBlue">
+
+    <Grid x:Name="timeGrid" HorizontalOptions="Center" VerticalOptions="Center">
+        
+        <Grid x:Name="hourSen" Margin="0, 0, 0, 0" RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto,Auto" ColumnDefinitions="Auto,Auto,Auto,Auto,Auto">
+            
+            <!-- 0 -->
+            <Grid x:Name="hourSen0" IsVisible="False" RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto,Auto" ColumnDefinitions="Auto,Auto,Auto,Auto,Auto">
+                
+                <BoxView Grid.Row="0" Grid.Column="1" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="0" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="0" Grid.Column="3" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+               
+                <BoxView Grid.Row="1" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="1" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="2" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="2" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="3" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="3" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="4" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="4" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="5" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="5" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="6" Grid.Column="1" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="6" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="6" Grid.Column="3" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+            </Grid>
+            
+            
+            <!-- 1 -->
+            <Grid x:Name="hourSen1" IsVisible="False" RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto,Auto" ColumnDefinitions="Auto,Auto,Auto,Auto,Auto">
+                
+                <BoxView Grid.Row="0" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+               
+                <BoxView Grid.Row="1" Grid.Column="1" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="1" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="2" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="2" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="3" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="4" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="5" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="6" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="6" Grid.Column="1" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="6" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="6" Grid.Column="3" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="6" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+            </Grid>
+            
+            
+            <!-- 2 -->
+            <Grid x:Name="hourSen2" IsVisible="False" RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto,Auto" ColumnDefinitions="Auto,Auto,Auto,Auto,Auto">
+                
+                <BoxView Grid.Row="0" Grid.Column="1" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="0" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="0" Grid.Column="3" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+               
+                <BoxView Grid.Row="1" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="1" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="2" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="3" Grid.Column="3" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="4" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="5" Grid.Column="1" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="6" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="6" Grid.Column="1" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="6" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="6" Grid.Column="3" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="6" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+            </Grid>
+            
+            
+            <!-- 3 -->
+            <Grid x:Name="hourSen3" IsVisible="False" RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto,Auto" ColumnDefinitions="Auto,Auto,Auto,Auto,Auto">
+                
+                <BoxView Grid.Row="0" Grid.Column="1" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="0" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="0" Grid.Column="3" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+               
+                <BoxView Grid.Row="1" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="1" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="2" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="3" Grid.Column="3" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="4" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="5" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="5" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="6" Grid.Column="1" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="6" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="6" Grid.Column="3" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+            </Grid>
+            
+            
+            <!-- 4 -->
+            <Grid x:Name="hourSen4" IsVisible="False" RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto,Auto" ColumnDefinitions="Auto,Auto,Auto,Auto,Auto">
+                
+                <BoxView Grid.Row="0" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="0" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+               
+                <BoxView Grid.Row="1" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="1" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="2" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="2" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="3" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="3" Grid.Column="1" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="3" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="3" Grid.Column="3" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="3" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="4" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="5" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="6" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+            </Grid>
+            
+            
+            <!-- 5 -->
+            <Grid x:Name="hourSen5" IsVisible="False" RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto,Auto" ColumnDefinitions="Auto,Auto,Auto,Auto,Auto">
+                
+                <BoxView Grid.Row="0" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="0" Grid.Column="1" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="0" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="0" Grid.Column="3" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="0" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+               
+                <BoxView Grid.Row="1" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="2" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="3" Grid.Column="1" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="3" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="3" Grid.Column="3" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="4" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="5" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="5" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="6" Grid.Column="1" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="6" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="6" Grid.Column="3" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+            </Grid>
+            
+            
+            <!-- 6 -->
+            <Grid x:Name="hourSen6" IsVisible="False" RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto,Auto" ColumnDefinitions="Auto,Auto,Auto,Auto,Auto">
+                
+                <BoxView Grid.Row="0" Grid.Column="1" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="0" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="0" Grid.Column="3" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+               
+                <BoxView Grid.Row="1" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="1" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="2" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="3" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="3" Grid.Column="1" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="3" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="3" Grid.Column="3" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="4" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="4" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="5" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="5" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="6" Grid.Column="1" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="6" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="6" Grid.Column="3" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+            </Grid>
+            
+            
+            <!-- 7 -->
+            <Grid x:Name="hourSen7" IsVisible="False" RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto,Auto" ColumnDefinitions="Auto,Auto,Auto,Auto,Auto">
+                
+                <BoxView Grid.Row="0" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="0" Grid.Column="1" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="0" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="0" Grid.Column="3" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="0" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+               
+                <BoxView Grid.Row="1" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="2" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="3" Grid.Column="3" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="4" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="5" Grid.Column="1" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="6" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+            </Grid>
+            
+            
+            <!-- 8 -->
+            <Grid x:Name="hourSen8" IsVisible="False" RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto,Auto" ColumnDefinitions="Auto,Auto,Auto,Auto,Auto">
+                
+                <BoxView Grid.Row="0" Grid.Column="1" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="0" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="0" Grid.Column="3" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+               
+                <BoxView Grid.Row="1" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="1" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="2" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="2" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="3" Grid.Column="1" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="3" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="3" Grid.Column="3" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="4" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="4" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="5" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="5" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="6" Grid.Column="1" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="6" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="6" Grid.Column="3" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+            </Grid>
+            
+            
+            <!-- 9 -->
+            <Grid x:Name="hourSen9" IsVisible="False" RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto,Auto" ColumnDefinitions="Auto,Auto,Auto,Auto,Auto">
+                
+                <BoxView Grid.Row="0" Grid.Column="1" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="0" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="0" Grid.Column="3" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+               
+                <BoxView Grid.Row="1" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="1" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="2" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="2" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="3" Grid.Column="1" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="3" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="3" Grid.Column="3" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="3" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="4" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="5" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="5" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="6" Grid.Column="1" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="6" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="6" Grid.Column="3" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+            </Grid>
+            
+        </Grid>
+        
+        
+        
+        <Grid x:Name="hourJun" Margin="150, 0, 0, 0" RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto,Auto" ColumnDefinitions="Auto,Auto,Auto,Auto,Auto">
+            
+            <!-- 0 -->
+            <Grid x:Name="hourJun0" IsVisible="False" RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto,Auto" ColumnDefinitions="Auto,Auto,Auto,Auto,Auto">
+                
+                <BoxView Grid.Row="0" Grid.Column="1" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="0" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="0" Grid.Column="3" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+               
+                <BoxView Grid.Row="1" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="1" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="2" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="2" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="3" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="3" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="4" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="4" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="5" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="5" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="6" Grid.Column="1" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="6" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="6" Grid.Column="3" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+            </Grid>
+            
+            
+            <!-- 1 -->
+            <Grid x:Name="hourJun1" IsVisible="False" RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto,Auto" ColumnDefinitions="Auto,Auto,Auto,Auto,Auto">
+                
+                <BoxView Grid.Row="0" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+               
+                <BoxView Grid.Row="1" Grid.Column="1" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="1" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="2" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="2" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="3" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="4" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="5" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="6" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="6" Grid.Column="1" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="6" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="6" Grid.Column="3" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="6" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+            </Grid>
+            
+            
+            <!-- 2 -->
+            <Grid x:Name="hourJun2" IsVisible="False" RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto,Auto" ColumnDefinitions="Auto,Auto,Auto,Auto,Auto">
+                
+                <BoxView Grid.Row="0" Grid.Column="1" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="0" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="0" Grid.Column="3" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+               
+                <BoxView Grid.Row="1" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="1" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="2" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="3" Grid.Column="3" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="4" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="5" Grid.Column="1" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="6" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="6" Grid.Column="1" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="6" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="6" Grid.Column="3" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="6" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+            </Grid>
+            
+            
+            <!-- 3 -->
+            <Grid x:Name="hourJun3" IsVisible="False" RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto,Auto" ColumnDefinitions="Auto,Auto,Auto,Auto,Auto">
+                
+                <BoxView Grid.Row="0" Grid.Column="1" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="0" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="0" Grid.Column="3" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+               
+                <BoxView Grid.Row="1" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="1" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="2" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="3" Grid.Column="3" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="4" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="5" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="5" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="6" Grid.Column="1" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="6" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="6" Grid.Column="3" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+            </Grid>
+            
+            
+            <!-- 4 -->
+            <Grid x:Name="hourJun4" IsVisible="False" RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto,Auto" ColumnDefinitions="Auto,Auto,Auto,Auto,Auto">
+                
+                <BoxView Grid.Row="0" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="0" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+               
+                <BoxView Grid.Row="1" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="1" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="2" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="2" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="3" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="3" Grid.Column="1" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="3" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="3" Grid.Column="3" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="3" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="4" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="5" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="6" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+            </Grid>
+            
+            
+            <!-- 5 -->
+            <Grid x:Name="hourJun5" IsVisible="False" RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto,Auto" ColumnDefinitions="Auto,Auto,Auto,Auto,Auto">
+                
+                <BoxView Grid.Row="0" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="0" Grid.Column="1" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="0" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="0" Grid.Column="3" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="0" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+               
+                <BoxView Grid.Row="1" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="2" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="3" Grid.Column="1" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="3" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="3" Grid.Column="3" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="4" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="5" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="5" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="6" Grid.Column="1" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="6" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="6" Grid.Column="3" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+            </Grid>
+            
+            
+            <!-- 6 -->
+            <Grid x:Name="hourJun6" IsVisible="False" RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto,Auto" ColumnDefinitions="Auto,Auto,Auto,Auto,Auto">
+                
+                <BoxView Grid.Row="0" Grid.Column="1" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="0" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="0" Grid.Column="3" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+               
+                <BoxView Grid.Row="1" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="1" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="2" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="3" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="3" Grid.Column="1" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="3" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="3" Grid.Column="3" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="4" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="4" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="5" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="5" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="6" Grid.Column="1" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="6" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="6" Grid.Column="3" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+            </Grid>
+            
+            
+            <!-- 7 -->
+            <Grid x:Name="hourJun7" IsVisible="False" RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto,Auto" ColumnDefinitions="Auto,Auto,Auto,Auto,Auto">
+                
+                <BoxView Grid.Row="0" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="0" Grid.Column="1" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="0" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="0" Grid.Column="3" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="0" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+               
+                <BoxView Grid.Row="1" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="2" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="3" Grid.Column="3" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="4" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="5" Grid.Column="1" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="6" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+            </Grid>
+            
+            
+            <!-- 8 -->
+            <Grid x:Name="hourJun8" IsVisible="False" RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto,Auto" ColumnDefinitions="Auto,Auto,Auto,Auto,Auto">
+                
+                <BoxView Grid.Row="0" Grid.Column="1" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="0" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="0" Grid.Column="3" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+               
+                <BoxView Grid.Row="1" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="1" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="2" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="2" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="3" Grid.Column="1" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="3" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="3" Grid.Column="3" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="4" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="4" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="5" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="5" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="6" Grid.Column="1" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="6" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="6" Grid.Column="3" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+            </Grid>
+            
+            
+            <!-- 9 -->
+            <Grid x:Name="hourJun9" IsVisible="False" RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto,Auto" ColumnDefinitions="Auto,Auto,Auto,Auto,Auto">
+                
+                <BoxView Grid.Row="0" Grid.Column="1" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="0" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="0" Grid.Column="3" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+               
+                <BoxView Grid.Row="1" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="1" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="2" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="2" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="3" Grid.Column="1" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="3" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="3" Grid.Column="3" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="3" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="4" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="5" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="5" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="6" Grid.Column="1" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="6" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="6" Grid.Column="3" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+            </Grid>
+            
+        </Grid>
+        
+        
+        
+        <Grid Margin="300, 0, 0, 0" RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto,Auto" ColumnDefinitions="Auto,Auto,Auto,Auto,Auto">
+            
+            <BoxView Grid.Row="0" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="LightSteelBlue" />
+            
+            <BoxView Grid.Row="1" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="LightSteelBlue" />
+            
+            <BoxView Grid.Row="2" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+            
+            <BoxView Grid.Row="3" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="LightSteelBlue" />
+            
+            <BoxView Grid.Row="4" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+            
+            <BoxView Grid.Row="5" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="LightSteelBlue" />
+            
+            <BoxView Grid.Row="6" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="LightSteelBlue" />
+            
+        </Grid>
+        
+        
+        
+        <Grid x:Name="minuteSen" Margin="370, 0, 0, 0" RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto,Auto" ColumnDefinitions="Auto,Auto,Auto,Auto,Auto">
+            
+            <!-- 0 -->
+            <Grid x:Name="minuteSen0" IsVisible="False" RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto,Auto" ColumnDefinitions="Auto,Auto,Auto,Auto,Auto">
+                
+                <BoxView Grid.Row="0" Grid.Column="1" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="0" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="0" Grid.Column="3" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+               
+                <BoxView Grid.Row="1" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="1" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="2" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="2" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="3" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="3" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="4" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="4" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="5" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="5" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="6" Grid.Column="1" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="6" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="6" Grid.Column="3" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+            </Grid>
+            
+            
+            <!-- 1 -->
+            <Grid x:Name="minuteSen1" IsVisible="False" RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto,Auto" ColumnDefinitions="Auto,Auto,Auto,Auto,Auto">
+                
+                <BoxView Grid.Row="0" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+               
+                <BoxView Grid.Row="1" Grid.Column="1" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="1" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="2" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="2" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="3" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="4" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="5" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="6" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="6" Grid.Column="1" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="6" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="6" Grid.Column="3" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="6" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+            </Grid>
+            
+            
+            <!-- 2 -->
+            <Grid x:Name="minuteSen2" IsVisible="False" RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto,Auto" ColumnDefinitions="Auto,Auto,Auto,Auto,Auto">
+                
+                <BoxView Grid.Row="0" Grid.Column="1" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="0" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="0" Grid.Column="3" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+               
+                <BoxView Grid.Row="1" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="1" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="2" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="3" Grid.Column="3" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="4" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="5" Grid.Column="1" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="6" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="6" Grid.Column="1" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="6" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="6" Grid.Column="3" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="6" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+            </Grid>
+            
+            
+            <!-- 3 -->
+            <Grid x:Name="minuteSen3" IsVisible="False" RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto,Auto" ColumnDefinitions="Auto,Auto,Auto,Auto,Auto">
+                
+                <BoxView Grid.Row="0" Grid.Column="1" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="0" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="0" Grid.Column="3" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+               
+                <BoxView Grid.Row="1" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="1" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="2" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="3" Grid.Column="3" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="4" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="5" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="5" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="6" Grid.Column="1" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="6" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="6" Grid.Column="3" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+            </Grid>
+            
+            
+            <!-- 4 -->
+            <Grid x:Name="minuteSen4" IsVisible="False" RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto,Auto" ColumnDefinitions="Auto,Auto,Auto,Auto,Auto">
+                
+                <BoxView Grid.Row="0" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="0" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+               
+                <BoxView Grid.Row="1" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="1" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="2" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="2" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="3" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="3" Grid.Column="1" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="3" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="3" Grid.Column="3" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="3" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="4" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="5" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="6" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+            </Grid>
+            
+            
+            <!-- 5 -->
+            <Grid x:Name="minuteSen5" IsVisible="False" RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto,Auto" ColumnDefinitions="Auto,Auto,Auto,Auto,Auto">
+                
+                <BoxView Grid.Row="0" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="0" Grid.Column="1" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="0" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="0" Grid.Column="3" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="0" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+               
+                <BoxView Grid.Row="1" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="2" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="3" Grid.Column="1" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="3" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="3" Grid.Column="3" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="4" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="5" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="5" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="6" Grid.Column="1" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="6" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="6" Grid.Column="3" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+            </Grid>
+            
+            
+            <!-- 6 -->
+            <Grid x:Name="minuteSen6" IsVisible="False" RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto,Auto" ColumnDefinitions="Auto,Auto,Auto,Auto,Auto">
+                
+                <BoxView Grid.Row="0" Grid.Column="1" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="0" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="0" Grid.Column="3" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+               
+                <BoxView Grid.Row="1" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="1" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="2" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="3" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="3" Grid.Column="1" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="3" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="3" Grid.Column="3" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="4" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="4" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="5" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="5" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="6" Grid.Column="1" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="6" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="6" Grid.Column="3" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+            </Grid>
+            
+            
+            <!-- 7 -->
+            <Grid x:Name="minuteSen7" IsVisible="False" RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto,Auto" ColumnDefinitions="Auto,Auto,Auto,Auto,Auto">
+                
+                <BoxView Grid.Row="0" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="0" Grid.Column="1" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="0" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="0" Grid.Column="3" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="0" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+               
+                <BoxView Grid.Row="1" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="2" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="3" Grid.Column="3" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="4" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="5" Grid.Column="1" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="6" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+            </Grid>
+            
+            
+            <!-- 8 -->
+            <Grid x:Name="minuteSen8" IsVisible="False" RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto,Auto" ColumnDefinitions="Auto,Auto,Auto,Auto,Auto">
+                
+                <BoxView Grid.Row="0" Grid.Column="1" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="0" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="0" Grid.Column="3" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+               
+                <BoxView Grid.Row="1" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="1" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="2" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="2" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="3" Grid.Column="1" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="3" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="3" Grid.Column="3" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="4" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="4" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="5" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="5" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="6" Grid.Column="1" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="6" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="6" Grid.Column="3" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+            </Grid>
+            
+            
+            <!-- 9 -->
+            <Grid x:Name="minuteSen9" IsVisible="False" RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto,Auto" ColumnDefinitions="Auto,Auto,Auto,Auto,Auto">
+                
+                <BoxView Grid.Row="0" Grid.Column="1" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="0" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="0" Grid.Column="3" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+               
+                <BoxView Grid.Row="1" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="1" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="2" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="2" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="3" Grid.Column="1" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="3" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="3" Grid.Column="3" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="3" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="4" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="5" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="5" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="6" Grid.Column="1" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="6" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="6" Grid.Column="3" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+            </Grid>
+            
+        </Grid>
+        
+        
+        
+        <Grid x:Name="minuteJun" Margin="520, 0, 0, 0" RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto,Auto" ColumnDefinitions="Auto,Auto,Auto,Auto,Auto">
+            
+            <!-- 0 -->
+            <Grid x:Name="minuteJun0" IsVisible="False" RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto,Auto" ColumnDefinitions="Auto,Auto,Auto,Auto,Auto">
+                
+                <BoxView Grid.Row="0" Grid.Column="1" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="0" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="0" Grid.Column="3" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+               
+                <BoxView Grid.Row="1" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="1" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="2" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="2" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="3" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="3" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="4" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="4" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="5" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="5" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="6" Grid.Column="1" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="6" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="6" Grid.Column="3" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+            </Grid>
+            
+            
+            <!-- 1 -->
+            <Grid x:Name="minuteJun1" IsVisible="False" RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto,Auto" ColumnDefinitions="Auto,Auto,Auto,Auto,Auto">
+                
+                <BoxView Grid.Row="0" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+               
+                <BoxView Grid.Row="1" Grid.Column="1" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="1" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="2" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="2" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="3" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="4" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="5" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="6" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="6" Grid.Column="1" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="6" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="6" Grid.Column="3" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="6" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+            </Grid>
+            
+            
+            <!-- 2 -->
+            <Grid x:Name="minuteJun2" IsVisible="False" RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto,Auto" ColumnDefinitions="Auto,Auto,Auto,Auto,Auto">
+                
+                <BoxView Grid.Row="0" Grid.Column="1" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="0" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="0" Grid.Column="3" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+               
+                <BoxView Grid.Row="1" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="1" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="2" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="3" Grid.Column="3" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="4" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="5" Grid.Column="1" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="6" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="6" Grid.Column="1" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="6" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="6" Grid.Column="3" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="6" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+            </Grid>
+            
+            
+            <!-- 3 -->
+            <Grid x:Name="minuteJun3" IsVisible="False" RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto,Auto" ColumnDefinitions="Auto,Auto,Auto,Auto,Auto">
+                
+                <BoxView Grid.Row="0" Grid.Column="1" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="0" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="0" Grid.Column="3" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+               
+                <BoxView Grid.Row="1" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="1" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="2" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="3" Grid.Column="3" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="4" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="5" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="5" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="6" Grid.Column="1" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="6" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="6" Grid.Column="3" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+            </Grid>
+            
+            
+            <!-- 4 -->
+            <Grid x:Name="minuteJun4" IsVisible="False" RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto,Auto" ColumnDefinitions="Auto,Auto,Auto,Auto,Auto">
+                
+                <BoxView Grid.Row="0" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="0" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+               
+                <BoxView Grid.Row="1" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="1" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="2" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="2" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="3" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="3" Grid.Column="1" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="3" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="3" Grid.Column="3" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="3" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="4" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="5" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="6" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+            </Grid>
+            
+            
+            <!-- 5 -->
+            <Grid x:Name="minuteJun5" IsVisible="False" RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto,Auto" ColumnDefinitions="Auto,Auto,Auto,Auto,Auto">
+                
+                <BoxView Grid.Row="0" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="0" Grid.Column="1" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="0" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="0" Grid.Column="3" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="0" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+               
+                <BoxView Grid.Row="1" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="2" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="3" Grid.Column="1" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="3" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="3" Grid.Column="3" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="4" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="5" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="5" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="6" Grid.Column="1" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="6" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="6" Grid.Column="3" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+            </Grid>
+            
+            
+            <!-- 6 -->
+            <Grid x:Name="minuteJun6" IsVisible="False" RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto,Auto" ColumnDefinitions="Auto,Auto,Auto,Auto,Auto">
+                
+                <BoxView Grid.Row="0" Grid.Column="1" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="0" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="0" Grid.Column="3" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+               
+                <BoxView Grid.Row="1" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="1" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="2" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="3" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="3" Grid.Column="1" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="3" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="3" Grid.Column="3" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="4" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="4" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="5" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="5" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="6" Grid.Column="1" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="6" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="6" Grid.Column="3" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+            </Grid>
+            
+            
+            <!-- 7 -->
+            <Grid x:Name="minuteJun7" IsVisible="False" RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto,Auto" ColumnDefinitions="Auto,Auto,Auto,Auto,Auto">
+                
+                <BoxView Grid.Row="0" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="0" Grid.Column="1" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="0" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="0" Grid.Column="3" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="0" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+               
+                <BoxView Grid.Row="1" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="2" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="3" Grid.Column="3" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="4" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="5" Grid.Column="1" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="6" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+            </Grid>
+            
+            
+            <!-- 8 -->
+            <Grid x:Name="minuteJun8" IsVisible="False" RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto,Auto" ColumnDefinitions="Auto,Auto,Auto,Auto,Auto">
+                
+                <BoxView Grid.Row="0" Grid.Column="1" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="0" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="0" Grid.Column="3" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+               
+                <BoxView Grid.Row="1" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="1" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="2" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="2" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="3" Grid.Column="1" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="3" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="3" Grid.Column="3" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="4" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="4" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="5" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="5" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="6" Grid.Column="1" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="6" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="6" Grid.Column="3" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+            </Grid>
+            
+            
+            <!-- 9 -->
+            <Grid x:Name="minuteJun9" IsVisible="False" RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto,Auto" ColumnDefinitions="Auto,Auto,Auto,Auto,Auto">
+                
+                <BoxView Grid.Row="0" Grid.Column="1" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="0" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="0" Grid.Column="3" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+               
+                <BoxView Grid.Row="1" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="1" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="2" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="2" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="3" Grid.Column="1" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="3" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="3" Grid.Column="3" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="3" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="4" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="5" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="5" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="6" Grid.Column="1" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="6" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="6" Grid.Column="3" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+            </Grid>
+            
+        </Grid>
+        
+        
+        
+        <Grid Margin="670, 0, 0, 0" RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto,Auto" ColumnDefinitions="Auto,Auto,Auto,Auto,Auto">
+                
+            <BoxView Grid.Row="0" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="LightSteelBlue" />
+            
+            <BoxView Grid.Row="1" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="LightSteelBlue" />
+            
+            <BoxView Grid.Row="2" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+            
+            <BoxView Grid.Row="3" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="LightSteelBlue" />
+            
+            <BoxView Grid.Row="4" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+            
+            <BoxView Grid.Row="5" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="LightSteelBlue" />
+            
+            <BoxView Grid.Row="6" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="LightSteelBlue" />
+            
+        </Grid>
+        
+        
+        
+        <Grid x:Name="secondSen" Margin="740, 0, 0, 0" RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto,Auto" ColumnDefinitions="Auto,Auto,Auto,Auto,Auto">
+            
+            <!-- 0 -->
+            <Grid x:Name="secondSen0" IsVisible="False" RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto,Auto" ColumnDefinitions="Auto,Auto,Auto,Auto,Auto">
+                
+                <BoxView Grid.Row="0" Grid.Column="1" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="0" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="0" Grid.Column="3" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+               
+                <BoxView Grid.Row="1" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="1" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="2" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="2" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="3" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="3" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="4" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="4" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="5" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="5" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="6" Grid.Column="1" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="6" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="6" Grid.Column="3" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+            </Grid>
+            
+            
+            <!-- 1 -->
+            <Grid x:Name="secondSen1" IsVisible="False" RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto,Auto" ColumnDefinitions="Auto,Auto,Auto,Auto,Auto">
+                
+                <BoxView Grid.Row="0" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+               
+                <BoxView Grid.Row="1" Grid.Column="1" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="1" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="2" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="2" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="3" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="4" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="5" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="6" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="6" Grid.Column="1" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="6" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="6" Grid.Column="3" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="6" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+            </Grid>
+            
+            
+            <!-- 2 -->
+            <Grid x:Name="secondSen2" IsVisible="False" RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto,Auto" ColumnDefinitions="Auto,Auto,Auto,Auto,Auto">
+                
+                <BoxView Grid.Row="0" Grid.Column="1" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="0" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="0" Grid.Column="3" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+               
+                <BoxView Grid.Row="1" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="1" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="2" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="3" Grid.Column="3" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="4" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="5" Grid.Column="1" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="6" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="6" Grid.Column="1" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="6" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="6" Grid.Column="3" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="6" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+            </Grid>
+            
+            
+            <!-- 3 -->
+            <Grid x:Name="secondSen3" IsVisible="False" RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto,Auto" ColumnDefinitions="Auto,Auto,Auto,Auto,Auto">
+                
+                <BoxView Grid.Row="0" Grid.Column="1" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="0" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="0" Grid.Column="3" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+               
+                <BoxView Grid.Row="1" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="1" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="2" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="3" Grid.Column="3" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="4" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="5" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="5" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="6" Grid.Column="1" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="6" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="6" Grid.Column="3" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+            </Grid>
+            
+            
+            <!-- 4 -->
+            <Grid x:Name="secondSen4" IsVisible="False" RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto,Auto" ColumnDefinitions="Auto,Auto,Auto,Auto,Auto">
+                
+                <BoxView Grid.Row="0" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="0" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+               
+                <BoxView Grid.Row="1" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="1" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="2" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="2" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="3" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="3" Grid.Column="1" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="3" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="3" Grid.Column="3" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="3" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="4" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="5" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="6" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+            </Grid>
+            
+            
+            <!-- 5 -->
+            <Grid x:Name="secondSen5" IsVisible="False" RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto,Auto" ColumnDefinitions="Auto,Auto,Auto,Auto,Auto">
+                
+                <BoxView Grid.Row="0" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="0" Grid.Column="1" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="0" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="0" Grid.Column="3" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="0" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+               
+                <BoxView Grid.Row="1" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="2" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="3" Grid.Column="1" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="3" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="3" Grid.Column="3" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="4" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="5" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="5" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="6" Grid.Column="1" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="6" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="6" Grid.Column="3" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+            </Grid>
+            
+            
+            <!-- 6 -->
+            <Grid x:Name="secondSen6" IsVisible="False" RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto,Auto" ColumnDefinitions="Auto,Auto,Auto,Auto,Auto">
+                
+                <BoxView Grid.Row="0" Grid.Column="1" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="0" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="0" Grid.Column="3" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+               
+                <BoxView Grid.Row="1" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="1" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="2" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="3" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="3" Grid.Column="1" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="3" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="3" Grid.Column="3" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="4" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="4" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="5" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="5" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="6" Grid.Column="1" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="6" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="6" Grid.Column="3" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+            </Grid>
+            
+            
+            <!-- 7 -->
+            <Grid x:Name="secondSen7" IsVisible="False" RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto,Auto" ColumnDefinitions="Auto,Auto,Auto,Auto,Auto">
+                
+                <BoxView Grid.Row="0" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="0" Grid.Column="1" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="0" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="0" Grid.Column="3" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="0" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+               
+                <BoxView Grid.Row="1" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="2" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="3" Grid.Column="3" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="4" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="5" Grid.Column="1" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="6" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+            </Grid>
+            
+            
+            <!-- 8 -->
+            <Grid x:Name="secondSen8" IsVisible="False" RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto,Auto" ColumnDefinitions="Auto,Auto,Auto,Auto,Auto">
+                
+                <BoxView Grid.Row="0" Grid.Column="1" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="0" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="0" Grid.Column="3" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+               
+                <BoxView Grid.Row="1" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="1" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="2" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="2" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="3" Grid.Column="1" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="3" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="3" Grid.Column="3" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="4" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="4" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="5" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="5" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="6" Grid.Column="1" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="6" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="6" Grid.Column="3" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+            </Grid>
+            
+            
+            <!-- 9 -->
+            <Grid x:Name="secondSen9" IsVisible="False" RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto,Auto" ColumnDefinitions="Auto,Auto,Auto,Auto,Auto">
+                
+                <BoxView Grid.Row="0" Grid.Column="1" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="0" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="0" Grid.Column="3" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+               
+                <BoxView Grid.Row="1" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="1" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="2" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="2" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="3" Grid.Column="1" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="3" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="3" Grid.Column="3" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="3" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="4" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="5" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="5" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="6" Grid.Column="1" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="6" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="6" Grid.Column="3" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+            </Grid>
+            
+        </Grid>
+        
+        
+        
+        <Grid x:Name="secondJun" Margin="890, 0, 0, 0" RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto,Auto" ColumnDefinitions="Auto,Auto,Auto,Auto,Auto">
+            
+            <!-- 0 -->
+            <Grid x:Name="secondJun0" IsVisible="False" RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto,Auto" ColumnDefinitions="Auto,Auto,Auto,Auto,Auto">
+                
+                <BoxView Grid.Row="0" Grid.Column="1" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="0" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="0" Grid.Column="3" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+               
+                <BoxView Grid.Row="1" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="1" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="2" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="2" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="3" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="3" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="4" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="4" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="5" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="5" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="6" Grid.Column="1" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="6" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="6" Grid.Column="3" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+            </Grid>
+            
+            
+            <!-- 1 -->
+            <Grid x:Name="secondJun1" IsVisible="False" RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto,Auto" ColumnDefinitions="Auto,Auto,Auto,Auto,Auto">
+                
+                <BoxView Grid.Row="0" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+               
+                <BoxView Grid.Row="1" Grid.Column="1" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="1" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="2" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="2" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="3" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="4" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="5" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="6" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="6" Grid.Column="1" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="6" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="6" Grid.Column="3" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="6" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+            </Grid>
+            
+            
+            <!-- 2 -->
+            <Grid x:Name="secondJun2" IsVisible="False" RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto,Auto" ColumnDefinitions="Auto,Auto,Auto,Auto,Auto">
+                
+                <BoxView Grid.Row="0" Grid.Column="1" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="0" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="0" Grid.Column="3" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+               
+                <BoxView Grid.Row="1" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="1" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="2" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="3" Grid.Column="3" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="4" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="5" Grid.Column="1" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="6" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="6" Grid.Column="1" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="6" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="6" Grid.Column="3" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="6" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+            </Grid>
+            
+            
+            <!-- 3 -->
+            <Grid x:Name="secondJun3" IsVisible="False" RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto,Auto" ColumnDefinitions="Auto,Auto,Auto,Auto,Auto">
+                
+                <BoxView Grid.Row="0" Grid.Column="1" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="0" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="0" Grid.Column="3" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+               
+                <BoxView Grid.Row="1" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="1" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="2" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="3" Grid.Column="3" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="4" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="5" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="5" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="6" Grid.Column="1" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="6" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="6" Grid.Column="3" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+            </Grid>
+            
+            
+            <!-- 4 -->
+            <Grid x:Name="secondJun4" IsVisible="False" RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto,Auto" ColumnDefinitions="Auto,Auto,Auto,Auto,Auto">
+                
+                <BoxView Grid.Row="0" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="0" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+               
+                <BoxView Grid.Row="1" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="1" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="2" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="2" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="3" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="3" Grid.Column="1" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="3" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="3" Grid.Column="3" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="3" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="4" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="5" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="6" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+            </Grid>
+            
+            
+            <!-- 5 -->
+            <Grid x:Name="secondJun5" IsVisible="False" RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto,Auto" ColumnDefinitions="Auto,Auto,Auto,Auto,Auto">
+                
+                <BoxView Grid.Row="0" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="0" Grid.Column="1" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="0" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="0" Grid.Column="3" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="0" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+               
+                <BoxView Grid.Row="1" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="2" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="3" Grid.Column="1" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="3" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="3" Grid.Column="3" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="4" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="5" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="5" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="6" Grid.Column="1" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="6" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="6" Grid.Column="3" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+            </Grid>
+            
+            
+            <!-- 6 -->
+            <Grid x:Name="secondJun6" IsVisible="False" RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto,Auto" ColumnDefinitions="Auto,Auto,Auto,Auto,Auto">
+                
+                <BoxView Grid.Row="0" Grid.Column="1" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="0" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="0" Grid.Column="3" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+               
+                <BoxView Grid.Row="1" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="1" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="2" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="3" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="3" Grid.Column="1" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="3" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="3" Grid.Column="3" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="4" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="4" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="5" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="5" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="6" Grid.Column="1" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="6" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="6" Grid.Column="3" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+            </Grid>
+            
+            
+            <!-- 7 -->
+            <Grid x:Name="secondJun7" IsVisible="False" RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto,Auto" ColumnDefinitions="Auto,Auto,Auto,Auto,Auto">
+                
+                <BoxView Grid.Row="0" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="0" Grid.Column="1" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="0" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="0" Grid.Column="3" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="0" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+               
+                <BoxView Grid.Row="1" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="2" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="3" Grid.Column="3" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="4" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="5" Grid.Column="1" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="6" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+            </Grid>
+            
+            
+            <!-- 8 -->
+            <Grid x:Name="secondJun8" IsVisible="False" RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto,Auto" ColumnDefinitions="Auto,Auto,Auto,Auto,Auto">
+                
+                <BoxView Grid.Row="0" Grid.Column="1" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="0" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="0" Grid.Column="3" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+               
+                <BoxView Grid.Row="1" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="1" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="2" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="2" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="3" Grid.Column="1" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="3" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="3" Grid.Column="3" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="4" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="4" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="5" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="5" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="6" Grid.Column="1" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="6" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="6" Grid.Column="3" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+            </Grid>
+            
+            
+            <!-- 9 -->
+            <Grid x:Name="secondJun9" IsVisible="False" RowDefinitions="Auto,Auto,Auto,Auto,Auto,Auto,Auto" ColumnDefinitions="Auto,Auto,Auto,Auto,Auto">
+                
+                <BoxView Grid.Row="0" Grid.Column="1" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="0" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="0" Grid.Column="3" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+               
+                <BoxView Grid.Row="1" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="1" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="2" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="2" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="3" Grid.Column="1" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="3" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="3" Grid.Column="3" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="3" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="4" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="5" Grid.Column="0" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="5" Grid.Column="4" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+                
+                <BoxView Grid.Row="6" Grid.Column="1" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="6" Grid.Column="2" WidthRequest="20" HeightRequest="20" Color="Green" />
+                <BoxView Grid.Row="6" Grid.Column="3" WidthRequest="20" HeightRequest="20" Color="Green" />
+                
+            </Grid>
+            
+        </Grid>
+        
+    </Grid>
+
+</ContentPage>
